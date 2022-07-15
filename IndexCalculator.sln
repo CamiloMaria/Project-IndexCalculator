@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexCalculator", "IndexCalculator\IndexCalculator.csproj", "{7DBEFF61-4419-47EB-890F-1899BDD4E176}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DBEFF61-4419-47EB-890F-1899BDD4E176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBEFF61-4419-47EB-890F-1899BDD4E176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBEFF61-4419-47EB-890F-1899BDD4E176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBEFF61-4419-47EB-890F-1899BDD4E176}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DC79234-EDC2-48E8-8948-52E68F561272}
+	EndGlobalSection
+EndGlobal
