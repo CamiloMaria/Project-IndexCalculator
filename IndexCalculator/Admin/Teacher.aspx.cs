@@ -40,7 +40,7 @@ namespace IndexCalculator.Admin
                     {
                         string query = "Insert into Teacher values('" + txtName.Text.Trim() + "', '" + ddlGender.SelectedValue
                                             + "', '" + txtMobile.Text.Trim()  + "', '" + txtEmail.Text.Trim() + "', '" 
-                                            + txtPassword.Text.Trim() + "', '" + txtCedula.Text.Trim() + "', '" + txtDoB.Text.Trim() + "')";
+                                            + txtPassword.Text.Trim() + "', '" + txtCedula.Text.Trim() + "', '" + txtDoB.Text.Trim() + "' )";
                         fn.Query(query);
                         lblMsg.Text = "Agregado Correctamente!";
                         lblMsg.CssClass = "alert alert-success";

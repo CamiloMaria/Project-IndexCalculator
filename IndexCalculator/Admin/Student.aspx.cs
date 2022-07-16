@@ -41,7 +41,7 @@ namespace IndexCalculator.Admin
                     {
                         string query = "Insert into Student values('" + txtName.Text.Trim() + "', '" + ddlGender.SelectedValue
                                             + "', '" + txtDoB.Text.Trim() + "', '" + txtMobile.Text.Trim() + "', '"
-                                            + txtCarrera.Text.Trim() + "', '" + ddlClass.SelectedValue + "', '" + cedula + "')";
+                                            + txtCarrera.Text.Trim() + "', '" + ddlClass.SelectedValue + "', '" + cedula + "', '" + txtPassword.Text.Trim() + "', " + " 'S' )";
                         fn.Query(query);
                         lblMsg.Text = "Agregado Correctamente!";
                         lblMsg.CssClass = "alert alert-success";
@@ -51,6 +51,7 @@ namespace IndexCalculator.Admin
                         txtMobile.Text = string.Empty;
                         txtCarrera.Text = string.Empty;
                         txtDoB.Text = string.Empty;
+                        txtPassword.Text = string.Empty;
                         ddlClass.SelectedIndex = 0;
                         GetStudents();
                     }
@@ -74,7 +75,7 @@ namespace IndexCalculator.Admin
 
         private void GetStudents()
         {
-            DataTable dt = fn.Fetch(@"Select Row_NUMBER() over(Order by (Select 1)) as [Sr.No], s.StudentId, s.[Name], s.Cedula, s.Gender, s.Mobile, 
+            DataTable dt = fn.Fetch(@"Select Row_NUMBER() over(Order by (Select 1)) as [Sr.No], s.StudentId, s.[Name], s.Cedula, s.Type, s.[Password], s.Gender, s.Mobile, 
                                        s.Carrera, c.ClassId, c.ClassName from Student s inner join Class c on c.ClassId = s.ClassId");
             GridView1.DataSource = dt;
             GridView1.DataBind();

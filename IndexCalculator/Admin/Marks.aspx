@@ -114,7 +114,7 @@
                                 <ItemStyle HorizontalAlign="Center" />
                             </asp:TemplateField>
 
-                            <asp:CommandField CausesValidation="False" HeaderText="Operacion" ShowEditButton="True" ShowDeleteButton="True">
+                            <asp:CommandField CausesValidation="False" HeaderText="Operacion" ShowEditButton="True" >                           
                                 <ItemStyle HorizontalAlign="Center" />
                             </asp:CommandField>
                         </Columns>

@@ -71,7 +71,14 @@
                         ControlToValidate="ddlClass" Display="Dynamic" ForeColor="Red" InitialValue="Eliga el Aula" SetFocusOnError="True">
                     </asp:RequiredFieldValidator>
                 </div>
+                <div class="col-md-6">
+                    <label for="txtPassword">Contraseña</label>
+                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Ingrese la contraseña" TextMode="Password" required>
+                    </asp:TextBox>
+               </div>
             </div>
+
+            
 
             <div class="row mob-3 mr-lg-5 ml-lg-5">
                  <div class="col-md-3 col-md-offset-2 mb-3">

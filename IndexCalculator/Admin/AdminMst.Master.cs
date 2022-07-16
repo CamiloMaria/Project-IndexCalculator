@@ -11,7 +11,15 @@ namespace IndexCalculator.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuariologueado"] == null)
+            {
+                Response.Redirect("../Login/LoginHome.aspx");
+            }
+        }
+        protected void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            Session.Remove("Usuariologueado");
+            Response.Redirect("../Login/LoginHome.aspx");
         }
     }
 }

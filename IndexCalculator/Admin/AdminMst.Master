@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title>Index Calculator</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
         <link href="../Content/styles.css" rel="stylesheet" />
@@ -111,10 +111,10 @@
                             </ul>
                         </li>                      
                     </ul>
-                    <div class="logout_btn">
-                        <asp:LinkButton ID="btnLogOut" runat="server" CausesValidation="false">Logout</asp:LinkButton>
+                    <br /><br /><br /><br /><br /><br /><br /><br />
+                    <div>
+                        <asp:Button ID="BtnCerrar" CssClass="form-control btn btn-dark" runat="server" Text="Cerrar Sesion" OnClick="BtnCerrar_Click" />
                     </div>
-
                 </div>
             </div>
             <div class="main_container">
